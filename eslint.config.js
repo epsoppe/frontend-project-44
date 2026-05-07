@@ -1,22 +1,7 @@
-import stylistic from '@stylistic/eslint-plugin-js';
+import js from "@eslint/js";
+import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-export default [
-  {
-    plugins: {
-      '@stylistic/js': stylistic,
-    },
-    rules: {
-      // Стилистические правила (проверка отступов, кавычек и т.д.)
-      '@stylistic/js/indent': ['error', 2],
-      '@stylistic/js/quotes': ['error', 'single'],
-      '@stylistic/js/semi': ['error', 'always'],
-      // Базовые правила (запрет неиспользуемых переменных и т.д.)
-      'no-unused-vars': 'warn',
-      'no-console': 'off',
-    },
-    languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-    },
-  },
-];
+export default defineConfig([
+  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.browser } },
+]);

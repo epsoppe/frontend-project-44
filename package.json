@@ -1,22 +1,44 @@
 {
   "name": "@hexlet/code",
-  "version": "1.0.1",
-  "type": "module",
-  "description": "Brain games collection",
-  "bin": {
-    "brain-games": "bin/brain-games.js"
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/GamalielV1P/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/GamalielV1P/frontend-project-44/actions)",
+  "homepage": "https://github.com/GamalielV1P/frontend-project-44#readme",
+  "bugs": {
+    "url": "https://github.com/GamalielV1P/frontend-project-44/issues"
   },
-  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GamalielV1P/frontend-project-44.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "brain-games.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "form-data": "^4.0.5",
+    "lodash": "^4.17.23",
+    "makefile": "^0.0.2",
+    "module_name": "^1.0.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin-js": "^4.4.1",
-    "eslint": "^10.2.0"
+    "@eslint/create-config": "^1.11.0",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "jest": "^30.3.0",
+    "prettier": "^3.8.1"
   }
 }
